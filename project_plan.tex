@@ -1,0 +1,81 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{vhistory}
+\usepackage[parfill]{parskip}
+\graphicspath{{./}}
+
+% Set fancy looking header/footer and move page number to the right
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[R]{\thepage}
+
+\title{}
+\author{}
+\date{}
+
+%%%%%
+% The project plan describe the scope of the project and the overall software engineering approach that will be
+% followed. The document should provide an estimate of the time and schedule required for completion of the project
+% over the time alloted. It should be organized in a readable format, using terms taht are meaningful for the problem
+% domain.
+%%%%%
+
+\begin{document}
+    \pagenumbering{gobble}
+
+    % Titlepage, table of contents & list of figures on their own pages
+    \include{titlepage}
+    \tableofcontents
+    \listoffigures
+
+    % Revision history on its own page
+    \newpage
+    \begin{versionhistory}
+        \vhEntry{0.1}{01.01.1979}{KT}{Document Creation}
+    \end{versionhistory}
+    \newpage
+
+    % Start page numbering and the "meat" of the document.
+    \pagenumbering{arabic}
+    \section{Introduction}
+    %%
+    % The purpose and intended audience of the document should be given, and the layout of the remainder of the
+    %   document should be discussed.
+    %%
+
+    \section{Scope}
+    %%
+    % The scope of the software project to develope should be described to a level of detail sufficient for planning.
+    %   This includes the purpose of the application and the environment for development and operation of the
+    %   application.
+    %%
+
+    \section{Approach}
+    %%
+    % A description should be given of the software engineering approach to be used in the development of the
+    %   application.
+    %%
+
+    \section{Estimate}
+    %%
+    % An estimate of the time required to develop the application over time alloted should be provided, along with an
+    %   estimated schedule for completion of the project by the team in the form of a Gantt chart. For each software
+    %   development task to be performed, the time, duration, start date, finish date, and responsible team member
+    %   should be indicated.
+    %%
+    
+    \section{References}
+    %%
+    % Any textbooks or other documents referenced in the project plan should be listed.
+    %%
+
+    \appendix
+    \section{Appendix}
+    %%
+    % Any additional material supporting the project plan should be provided.
+    %%
+
+\end{document}

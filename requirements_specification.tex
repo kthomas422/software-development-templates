@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{vhistory}
+\usepackage[parfill]{parskip}
+\graphicspath{{./}}
+
+% Set fancy looking header/footer and move page number to the right
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[R]{\thepage}
+
+\title{}
+\author{}
+\date{}
+
+
+%%%%%
+% With communication of primary importance, the requirements specification should be in terms that meaningful for the
+% problem domain. The reqspecs shoudl be organized in a readable format, concentrating on what the application is
+% expected to acomplish. The reqspecs is a contract between the software development team and the customer so everyone
+% is on the same page of what is to be developed an why.
+%%%%%
+
+\begin{document}
+    \pagenumbering{gobble}
+
+    % Titlepage, table of contents & list of figures on their own pages
+    \include{titlepage}
+    \tableofcontents
+    \listoffigures
+
+    % Revision history on its own page
+    \newpage
+    \begin{versionhistory}
+        \vhEntry{0.1}{01.01.1971}{KT}{Document Creation}
+    \end{versionhistory}
+    \newpage
+
+    % Start page numbering and the "meat" of the document
+    \pagenumbering{arabic}
+    \section{Introduction}
+    %%
+    % Purpose and intended audience of the document should be given and the layout of the remainder of the document
+    %   should be discussed
+    %%
+
+    \section{Background}
+    %%
+    % Background material related to the problem domain should be provided. Examples are helpful in providing the
+    %   technical information necessary to understand the problem to be addressed by the application.
+    %%
+
+    \section{Overview}
+    %%
+    % The purpose of the application should be provided, and the hardware and software environment for the development
+    %   and installation of the application should be described. Users and how they will run the application should be
+    %   discussed. The context within which the application will operate should be shown and described as well.
+    %%
+
+    \section{Environment}
+    %%
+    % The input and output devices and information repositories to be used by the application should be described in
+    %   detail. Sample contents aid in communicating the function of information respositories within the application.
+    %%
+
+    \section{Operation}
+    %%
+    % Detailed information should be provided about the actions that will be performed by the application at the
+    %   beginning of operation, during operation, and at the end of operation. Sample user interface screens are
+    %   benificial in enabling understanding of the operational requirements for the application.
+    %%
+
+    \section*{References}
+    %%
+    % Any textbooks or other documents referenced in the requirements specification should be listed
+    %%
+
+    \appendix
+    \section{Appendix}
+    %%
+    % Any additional material supporting the requirements specification should be provided.
+    %%
+
+\end{document}
